@@ -2,9 +2,8 @@ from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = """'8423548342:AAHJ4pNJqpVg_gJ0YD4AgNsocKAULZE4W_8'
+TOKEN = ''
 BOT_USERNAME: Final ='@AV_AV_Bot'
-"""
 
 #Commands
 async def start_command(_update: Update, _context: ContextTypes.DEFAULT_TYPE):
@@ -76,4 +75,5 @@ if __name__ == '__main__':
     
     # Poll the bot
     print('Polling...')
+
     app.run_polling(poll_interval=3)
